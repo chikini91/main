@@ -119,7 +119,6 @@ footer {
       text-decoration: underline; }
 
 .slider {
-  display: none;
   height: 400px;
   overflow: hidden; }
   .slider .sliderContainer {
