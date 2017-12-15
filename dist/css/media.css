@@ -1,0 +1,141 @@
+@media only screen and (min-width: 1400px) {
+    body .slider{
+        display: block;
+    }
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    .header.container {
+        width: auto;
+    }
+
+    .menu .menulist {
+        line-height: inherit;
+        transform: translateY(150%);
+
+    }
+
+    .menu .menulist .menulist__main a,
+    .menu .menulist .menulist__catalog a,
+    .menu .menulist .menulist__servise a,
+    .menu .menulist .menulist__prise a,
+    .menu .menulist .menulist__contacts a {
+        font-size: 18px;
+
+    }
+
+    .menu .menulist_devider {
+        padding: 0 10px;
+        font-size: 20px;
+    }
+
+    .content,.location {
+        width: 700px;
+    }
+
+    .content .leftblock {
+        float: none;
+        margin: 0 auto 100px;
+
+    }
+    .content .leftblock .pricelist{
+        display: none;
+    }
+
+    .content .centerblock {
+        width: inherit;
+    }
+    .content .centerblock .container{
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (max-width: 740px) {
+
+    .header.container{
+        height: 170px;
+    }
+
+    .menu{
+        height: 45px;
+    }
+
+    .menu .menulist {
+        transform: translateY(50%);
+    }
+
+    .header .container__contacts__list{
+        font-size: 30px;
+    }
+
+    .header .container__logo_logo{
+        width: 200px;
+    }
+
+    .content, .location{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+
+    .menu .menulist_devider {
+        display: none;
+    }
+
+    .menu .menulist .menulist__main a,
+    .menu .menulist .menulist__catalog a,
+    .menu .menulist .menulist__servise a,
+    .menu .menulist .menulist__prise a,
+    .menu .menulist .menulist__contacts a {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .footer{
+        padding: 0;
+        flex-flow: column-reverse;
+        align-items: center;
+    }
+
+    .footer .menulist.submenu{
+        order: 1;
+    }
+    .footer .pixelplus {
+        margin: 10px;
+    }
+    .footer ul li{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 680px) {
+
+    .content, .location {
+        width: 355px;
+    }
+    .header .container__contacts__list {
+        font-size: 22px;
+    }
+    .header .container__logo_logo {
+        width: 180px;
+    }
+    .menu .menulist .menulist__main a, .menu .menulist .menulist__catalog a, .menu .menulist .menulist__servise a, .menu .menulist .menulist__prise a, .menu .menulist .menulist__contacts a {
+        padding: 1px;
+        font-size: 14px;
+    }
+
+    main #modal_form {
+        color: #535353;
+        width: 350px;
+        margin-left: -175px;
+
+    }
+
+}

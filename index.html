@@ -1,0 +1,269 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="./dist/css/media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./dist/js/main.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+</head>
+<body>
+<header>
+<div class="header">
+    <div class="header container">
+        <div class="header container__logo">
+            <img src="./dist/img/1.svg" alt="самая клёвая компания" class="header container__logo_logo">
+        </div>
+        <div class="header container__contacts">
+            <ul class="header container__contacts__list ">
+                <li>+7(499)777-77-77</li>
+                <li>+7(499)777-77-77</li>
+                <li class="header container__contacts__list_callback" id="callback">Обратная связь</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</header>
+<main>
+    <!--modal dialog-->
+<div id="modal_form">
+        <span id="modal_close">&#215;</span>
+        <p>ОБРАТНАЯ СВЯЗЬ</p>
+        <form action="callback.php" name="callback" method="post" id="callbackform">
+            <span>Ваше имя <i>*</i></span><br>
+            <input type="text" class="input" required><br>
+            <span>Телефон <i>*</i></span><br>
+            <input type="text" class="input" required><br>
+            <span>Email<i>*</i></span><br>
+            <input type="text" class="input" required><br>
+            <span>Сообщение</span><br>
+            <textarea rows="10" cols="41" id="comment">
+            </textarea>
+            <p>
+                <button type="submit" id="submit">ОТПРАВИТЬ</button>
+            </p>
+        </form>
+    </div>
+<div id="overlay"></div>
+    <!--End of modal dialog-->
+<div class="menu">
+    <ul class="menulist">
+        <li class="menulist__main">
+            <a href="#">Главная</a>
+        </li>
+        <li class="menulist_devider">ӏ</li>
+        <li class="menulist__catalog">
+            <a href="#">Каталог</a>
+        </li>
+        <li class="menulist_devider">ӏ</li>
+        <li class="menulist__servise">
+            <a href="#">Доставка и оплата</a>
+        </li>
+        <li class="menulist_devider">ӏ</li>
+        <li class="menulist__prise">
+            <a href="#">Прайс-лист</a>
+        </li>
+        <li class="menulist_devider">ӏ</li>
+        <li class="menulist__contacts">
+            <a href="#">Контакты</a>
+        </li>
+    </ul>
+</div>
+<div class="slider">
+    <div class="sliderContainer">
+        <ul class="sliderContainer__slides">
+            <li>
+                <img src="./dist/img/6.svg" alt="1">
+            </li>
+            <li>
+                <img src="./dist/img/6.svg" alt="3">
+            </li>
+            <li>
+                <img src="./dist/img/7.svg" alt="2">
+            </li>
+        </ul>
+        <div class="sliderContainer__buttons">
+            <div class="sliderContainer__buttons_prev">
+                <img src="./dist/img/8.svg" alt="prev">
+            </div>
+            <div class="sliderContainer__buttons_next">
+                <img src="./dist/img/5.svg" alt="next">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="location">
+            <span class="location">Главная</span>
+            <span class="location2">Каталог</span>
+            <span class="location3">Бытовая техника</span>
+        </div>
+<div class="content">
+        <div class="leftblock">
+            <ul class="leftblock__list">
+                <li class="cars"><span class="cars__header">Автомобили</span>
+                    <ul class="inner">
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </li>
+                <li class="householdChemicals"><span class="householdChemicals__header">Бытовая техника</span>
+                    <ul class="inner">
+                        <li>Микроволновки</li>
+                        <li>Холодильники</li>
+                        <li>Посудомоечные машины</li>
+                        <li>Чайники</li>
+                    </ul>
+                </li>
+                <li class="mobile"><span class="mobile__header">Мобильная техника</span>
+                    <ul class="inner">
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </li>
+                <li class="PC"><span class="PC__header">Компьютеры</span>
+                    <ul class="inner">
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </li>
+                <li class="clothes"><span class="clothes__header">Одежда</span>
+                    <ul class="inner">
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </li>
+                <li class="property"><span class="property__header">Недвижимость</span>
+                    <ul class="inner">
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </li>
+            </ul>
+            <figure class="pricelist">
+                <p><img src="./dist/img/2.svg" alt="чайник"/></p>
+                <figcaption>Прайс-лист</figcaption>
+            </figure>
+    </div>
+        <div class="centerblock">
+            <div class="centerblock
+            container">
+                <div class="centerblock__item">
+                    <figure>
+                        <p><img src="http://via.placeholder.com/210x210" alt="чайник"/></p>
+                        <figcaption>Самый клёвый чайник который надо купить!</figcaption>
+                    </figure>
+                    <div class="tobuy">
+                        <div class="tobuy__price">1 700</div>
+                        <img class="tobuy__add" src="./dist/img/3.svg">
+                    </div>
+                </div>
+                <div class="centerblock__item">
+                    <figure>
+                        <p><img src="http://via.placeholder.com/210x210" alt="чайник"/></p>
+                        <figcaption>Самый клёвый чайник который надо купить!</figcaption>
+                    </figure>
+                    <div class="tobuy">
+                        <div class="tobuy__price">1 700</div>
+                        <img class="tobuy__add" src="./dist/img/3.svg">
+                    </div>
+                </div>
+                <div class="centerblock__item">
+                    <figure>
+                        <p><img src="http://via.placeholder.com/210x210" alt="чайник"/></p>
+                        <figcaption>Самый клёвый чайник который надо купить!</figcaption>
+                    </figure>
+                    <div class="tobuy">
+                        <div class="tobuy__price">1 700</div>
+                        <img class="tobuy__add" src="./dist/img/3.svg">
+                    </div>
+                </div>
+                <div class="centerblock__item">
+                    <figure>
+                        <p><img src="http://via.placeholder.com/210x210" alt="чайник"/></p>
+                        <figcaption>Самый клёвый чайник который надо купить!</figcaption>
+                    </figure>
+                    <div class="tobuy">
+                        <div class="tobuy__price">1 700</div>
+                        <img class="tobuy__add" src="./dist/img/3.svg">
+                    </div>
+                </div>
+                <div class="centerblock__item">
+                    <figure>
+                        <p><img src="http://via.placeholder.com/210x210" alt="чайник"/></p>
+                        <figcaption>Самый клёвый чайник который надо купить!</figcaption>
+                    </figure>
+                    <div class="tobuy">
+                        <div class="tobuy__price">1 700</div>
+                        <img class="tobuy__add" src="./dist/img/3.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                    <a href="#" class="button">1</a>
+                    <a href="#" class="button">2</a>
+                    <a href="#" class="button">3</a>
+                    <a href="#" class="button selected">4</a>
+                    <a href="#" class="button">5</a>
+                    <a href="#" class="button">6</a>
+                    <a href="#" class="button">7</a>
+            </div>
+            <div class="aboutCompany">
+                <div class="aboutCompany__left">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, asperiores consectetur consequatur cum distinctio doloremque eaque optio, placeat possimus quod reprehenderit voluptatem. Amet aperiam aspernatur cum esse eum eveniet, exercitationem expedita facilis fugiat, in magni molestiae nemo nobis perferendis quia quis reiciendis repellendus sed sit tempora velit veniam vitae voluptatibus!
+                </div>
+                <div class="aboutCompany__right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid aperiam commodi consectetur deserunt dolore dolores doloribus est fugit id in, inventore iure laboriosam laudantium minima molestias neque nihil odio omnis perspiciatis porro quidem vel voluptatum? Facere laboriosam laudantium numquam odit pariatur praesentium quod tempore veniam vitae. A aperiam deleniti deserunt dicta distinctio facilis iusto, maiores nostrum optio, porro sunt veritatis? Animi, autem deleniti dicta enim, fugit in inventore laboriosam laudantium modi nobis optio praesentium, sed similique totam velit voluptas.
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <ul class="email">
+            <li>&#169; 2012-2013 ЗАО <q>Компания</q></li>
+            <li>info@name.ua</li>
+        </ul>
+        <ul class="menulist submenu">
+            <li class="menulist__main">
+                <a href="#">Главная</a>
+            </li>
+            <li class="menulist__catalog">
+                <a href="#">Каталог</a>
+            </li>
+            <li class="menulist__servise">
+                <a href="#">Доставка и оплата</a>
+            </li>
+            <li class="menulist__prise">
+                <a href="#">Прайс-лист</a>
+            </li>
+            <li class="menulist__contacts">
+                <a href="#">Контакты</a>
+            </li>
+        </ul>
+        <ul class="pixelplus">
+            <li><span>Разработка сайта</span> —</li>
+            <li>компания <q>Пиксель Плюс</q></li>
+        </ul>
+    </div>
+</footer>
+<!--preloader-->
+<div id="p_prldr">
+    <div class="contpre">
+        <span class="svg_anm"></span><br>
+        Подождите<br>
+        <small>идет загрузка</small>
+    </div>
+</div>
+</body>
+</html>
